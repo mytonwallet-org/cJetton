@@ -6,3 +6,5 @@ node_modules
 .wget-hsts
 bin
 .DS_Store
+data/
+temp/

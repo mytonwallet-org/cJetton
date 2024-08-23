@@ -20,13 +20,13 @@ const AIRDROP_START = 1722366929;
 const AIRDROP_END   = 1724183052;
 
 
-type AirdropData = {
+export type AirdropData = {
     amount: bigint,
     start_from: number,
     expire_at: number
 };
 
-const airDropValue: DictionaryValue<AirdropData> = {
+export const airDropValue: DictionaryValue<AirdropData> = {
     serialize: (src, builder) => {
         builder.storeCoins(src.amount);
         builder.storeUint(src.start_from, 48);
